@@ -20,7 +20,7 @@ with st.form("input form"):
     #level_expertise_2=st.selectbox("Choose level of the 2nd expertise:",('Expert','intermediate','beginner'))
 
     if st.form_submit_button("Start"):
-        if discussion is not None:
+        if expertise_1 is not None:
             if "openai_model" not in st.session_state:
                 st.session_state["openai_model"] = "gpt-3.5-turbo"
             
